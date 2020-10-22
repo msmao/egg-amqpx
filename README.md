@@ -1,4 +1,4 @@
-# egg-amqp
+# egg-amqpx
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -34,15 +34,13 @@ $ npm i egg-amqpx --save
 
 ```js
 // {app_root}/config/plugin.js
-exports.amqp = {
+exports.amqpx = {
   enable: true,
   package: 'egg-amqpx',
 };
 ```
 
 ## Configuration
-
-see [config/config.default.js](config/config.default.js) for more detail.
 
 ```js
 // {app_root}/config/config.default.js
@@ -205,7 +203,7 @@ exports.amqpx = {
 
 ## Questions & Suggestions
 
-Please open an issue [here](https://github.com/eggjs/egg/issues).
+Please open an issue [here](https://github.com/msmao/egg-amqpx/issues).
 
 ## License
 

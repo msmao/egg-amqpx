@@ -3,5 +3,5 @@
 const amqp = require('./lib/amqp');
 
 module.exports = app => {
-  if (app.config.amqp.app) amqp(app);
+  if (app.config.amqpx) amqp(app);
 };

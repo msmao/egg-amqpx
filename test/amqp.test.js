@@ -17,7 +17,7 @@ describe('test/amqp.test.js', () => {
   it('should GET /', () => {
     return app.httpRequest()
       .get('/')
-      .expect('hi, amqp')
+      .expect('hi, amqpx')
       .expect(200);
   });
 });
