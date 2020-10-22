@@ -2,10 +2,12 @@
 
 const debug = require('debug')('subscriber');
 
-class SpiderSubscriber {
+class TestSubscriber {
 
   constructor(ctx) {
     this.ctx = ctx;
+    this.app = ctx.app;
+    this.channel = ctx.channel; // channel.ack(message);
   }
 
   async consume(message) {
@@ -17,4 +19,4 @@ class SpiderSubscriber {
 
 }
 
-module.exports = SpiderSubscriber;
+module.exports = TestSubscriber;
